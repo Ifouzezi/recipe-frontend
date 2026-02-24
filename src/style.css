@@ -1,0 +1,30 @@
+:root {
+  --font-sans: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-serif: "Young Serif", ui-serif, Georgia, "Times New Roman", serif;
+
+  --text: #302d2c;
+  --muted: #5f564d;
+  --bg: #f3e5d7; /* adjust to match design */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--bg);
+}
+
+h1, h2, h3, h4, .heading-serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+
+
+p, li, span, small {
+  font-family: var(--font-sans);
+}
