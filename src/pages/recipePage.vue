@@ -13,23 +13,26 @@
       </p>
 
       <!-- Preparation box -->
-      <div class="prep-box p-3 rounded mb-4">
+      <div class="prep-box">
         <h3 class="mb-2">Preparation time</h3>
         <ul class="mb-0">
-          <li><strong>Total:</strong> Approximately 10 minutes</li>
-          <li><strong>Preparation:</strong> 5 minutes</li>
-          <li><strong>Cooking:</strong> 5 minutes</li>
+          <li><span><strong>Total:</strong> Approximately 10 minutes</span></li>
+          <li><span><strong>Preparation:</strong> 5 minutes</span></li>
+          <li><span><strong>Cooking:</strong> 5 minutes</span></li>
         </ul>
       </div>
 
       <!-- Ingredients -->
-      <h3 class="section-title">Ingredients</h3>
-      <ul>
-        <li>2–3 large eggs</li>
-        <li>Salt</li>
-        <li>Pepper</li>
-        <li>1 tbsp butter or oil</li>
-      </ul>
+      <section class="ingregrients">
+        <h2 class="section-title">Ingredients</h2>
+        <ul class="ingredient-list">
+         <li><span>2–3 large eggs</span></li>
+        <li><span>Salt, to taste</span></li>
+        <li><span>Pepper, to taste</span></li>
+        <li><span>1 tablespoon of butter or oil</span></li>
+        <li><span>Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
+        </ul>
+      </section>
 
       <!-- Instructions -->
       <h3 class="section-title">Instructions</h3>
@@ -75,8 +78,9 @@
 .prep-box {
   background: #fff5fa;
   padding: 24px;
-  border-radius: 16px;
-  
+  border-radius: 8px;
+  margin-bottom: 2em;
+
   h3 {
     color: #7b284f;
     font-size: 1.17rem;
@@ -85,7 +89,42 @@
 }
 
 .section-title {
-  margin-top: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
+  color: #854632;
+  margin-bottom: 1rem;
+}
+
+.ingregrients {
+  margin-bottom: 2rem;
+}
+
+.ingredient-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    padding-left: 1.3em;
+    margin-bottom: 0.5rem;
+    color: #5f574e;
+
+    span {
+     display: block;
+     margin-left: 20px;
+     font-size: 1rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 4px;
+      background-color: #854632;
+      border-radius: 50%;
+    }
+  }
 }
 </style>
