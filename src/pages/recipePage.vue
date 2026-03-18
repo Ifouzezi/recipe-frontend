@@ -35,25 +35,68 @@
       </section>
 
       <!-- Instructions -->
-      <h3 class="section-title">Instructions</h3>
-      <ol>
-        <li>Beat the eggs</li>
-        <li>Heat the pan</li>
-        <li>Cook the omelette</li>
-        <li>Add fillings</li>
-        <li>Fold and serve</li>
-      </ol>
-
-      <!-- Nutrition -->
-      <h3 class="section-title">Nutrition</h3>
-
-      <div class="row border-top py-2">
-        <div class="col">Calories</div>
-        <div class="col text-end fw-bold">277kcal</div>
+      <div class="instructions">
+        <h3 class="section-title">Instructions</h3>
+         <ol>
+          <li>
+            <span>
+              <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.
+            </span>
+          </li>
+        </ol>
       </div>
-      <div class="row border-top py-2">
-        <div class="col">Protein</div>
-        <div class="col text-end fw-bold">20g</div>
+      
+      <!-- Nutrition -->
+      <div class="nutrition">
+        <h3 class="section-title">Nutrition</h3>
+        <p class="text-muted">
+          The table below shows nutritional values per serving without the additional fillings.
+        </p>
+
+        <div class="row py-2 p-nutrition">
+          <div class="col">Calories</div>
+          <div class="col text-start color-nutrition fw-bold">277kcal</div>
+        </div>
+
+        <div class="row border-top p-nutrition py-2">
+          <div class="col">Carbs</div>
+          <div class="col text-start color-nutrition fw-bold">0g</div>
+        </div>
+
+        <div class="row border-top p-nutrition py-2">
+          <div class="col">Protein</div>
+          <div class="col text-start color-nutrition fw-bold">20g</div>
+        </div>
+
+        <div class="row border-top p-nutrition py-2">
+          <div class="col">Fat</div>
+          <div class="col color-nutrition text-start fw-bold">22g</div>
+        </div>
       </div>
     </div>
   </div>
@@ -86,6 +129,27 @@
     font-size: 1.17rem;
   }
 
+  ul {
+    padding-left: 12px;
+
+    li {
+      margin-bottom: 0.5rem;
+      color: #7b284f;
+      font-size: 12px;
+
+      span {
+        display: block;
+        /* margin-left: 20px; */
+        font-size: 1rem;
+      }
+
+      strong {
+        color: #854632;
+        margin-left: 20px;
+      }
+    }
+  }
+
 }
 
 .section-title {
@@ -96,6 +160,8 @@
 
 .ingregrients {
   margin-bottom: 2rem;
+  border-bottom: 1px solid #bcb8b8;
+  padding-bottom: 12px;
 }
 
 .ingredient-list {
@@ -124,6 +190,48 @@
       height: 4px;
       background-color: #854632;
       border-radius: 50%;
+    }
+  }
+}
+
+.instructions {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #bcb8b8;
+  padding-bottom: 12px;
+
+  ol {
+    padding-left: 20px;
+   
+    ::marker {
+      color: #854632;
+      font-weight: bold;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      color: #5f574e;
+
+      span {
+        display: block;
+        margin-left: 20px;
+        font-size: 1rem;
+      }
+
+      strong {
+        color: #5f574e;
+        /* margin-left: 20px; */
+      }
+    }
+  }
+}
+
+.nutrition {
+  .p-nutrition {
+    padding-left: 36px;
+    padding-right: 112px;
+
+    .color-nutrition {
+      color: #854632;
     }
   }
 }
