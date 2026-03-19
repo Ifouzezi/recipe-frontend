@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <div class="w-100 rounded-[12px]">
+  <div class="page-wrapper">
+  <div class="page-container">
+    <div class="w-100 rounded-[12px] img-container">
       <img src="/image-omelette.jpeg" class="img-fluid" alt="Omelette" />
     </div>
     <!-- Image -->
@@ -100,9 +101,21 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <style scoped>
+@media (min-width: 1024px) {
+  .page-wrapper {
+    background: #f3e5d7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+  }
+}
+
 .recipe-card {
   max-width: 700px;
   padding: 30px;
@@ -134,7 +147,7 @@
 
     li {
       margin-bottom: 0.5rem;
-      color: #7b284f;
+      /* color: #7b284f; */
       font-size: 12px;
 
       span {
@@ -233,6 +246,76 @@
     .color-nutrition {
       color: #854632;
     }
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .page-container {
+   background-color: white;
+   max-width: 700px;
+   border-radius: 24px;
+   box-shadow: 0 4px 12px rgba(200, 200, 200, 0.1);
+  }
+
+  .img-container {
+    padding: 32px 32px 0 32px;
+    border-radius: 12px;
+  }
+
+  .img-fluid {
+    border-radius: 12px;
+  }
+
+  /* Card container */
+  .recipe-card {
+    padding: 32px;
+    
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  /* Image wrapper */
+  .w-100 {
+    
+  }
+
+  img {
+   
+  }
+
+  /* Typography scaling */
+  .recipe-card h1 {
+   
+  }
+
+  .recipe-card p {
+    
+  }
+
+  /* Preparation box spacing */
+  .prep-box {
+    
+  }
+
+  /* Section spacing */
+  .ingregrients,
+  .instructions {
+    
+  }
+
+  /* Nutrition alignment */
+  .nutrition .p-nutrition {
+   
   }
 }
 </style>
