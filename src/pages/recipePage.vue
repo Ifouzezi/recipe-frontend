@@ -15,7 +15,7 @@
 
       <!-- Preparation box -->
       <div class="prep-box">
-        <h3 class="mb-2">Preparation time</h3>
+        <h2 class="mb-2">Preparation time</h2>
         <ul class="mb-0">
           <li><span><strong>Total:</strong> Approximately 10 minutes</span></li>
           <li><span><strong>Preparation:</strong> 5 minutes</span></li>
@@ -37,7 +37,7 @@
 
       <!-- Instructions -->
       <div class="instructions">
-        <h3 class="section-title">Instructions</h3>
+        <h2 class="section-title">Instructions</h2>
          <ol>
           <li>
             <span>
@@ -74,7 +74,7 @@
       
       <!-- Nutrition -->
       <div class="nutrition">
-        <h3 class="section-title">Nutrition</h3>
+        <h2 class="section-title">Nutrition</h2>
         <p class="text-muted">
           The table below shows nutritional values per serving without the additional fillings.
         </p>
@@ -137,7 +137,7 @@
   border-radius: 8px;
   margin-bottom: 2em;
 
-  h3 {
+  h2 {
     color: #7b284f;
     font-size: 1.17rem;
   }
@@ -251,7 +251,7 @@
 
 /* Desktop styles */
 @media (min-width: 1024px) {
-  h2, h3 {
+  h2, h2 {
     font-size: 1.5rem;
   }
 
